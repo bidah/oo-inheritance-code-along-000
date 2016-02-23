@@ -3,7 +3,6 @@ require "spec_helper"
 describe "car" do 
   let!(:car) { Car.new("medium", 4) } 
   describe "#new" do
-
     it "initializes with two arguments, wheel size and number" do 
       expect{Car.new("large", 4)}.to_not raise_error
     end
